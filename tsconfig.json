@@ -8,13 +8,12 @@
         "noEmitOnError": true,
         "lib": [
             "es6",
-            "dom",
-            "es2015.iterable"
+            "dom"
         ],
         "baseUrl": ".",
         "paths": {
             "~/*": [
-                "src/*"
+                "app/*"
             ]
         }
     },
