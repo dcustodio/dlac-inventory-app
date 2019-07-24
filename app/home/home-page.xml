@@ -21,9 +21,9 @@
         </ActionItem>
         <Label class="action-bar-title" text="Home"></Label>
     </ActionBar>
+    <StackLayout orientation="vertical" class="page-content" >
+        <Label class="page__list-item page-icon fa" text="&#xf015;"></Label>
+        <Label class="page__list-item " text="ok"></Label>
+    </StackLayout>
 
-    <GridLayout class="page-content">
-        <Label class="page-icon fa" text="&#xf015;"></Label>
-        <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-    </GridLayout>
 </Page>
