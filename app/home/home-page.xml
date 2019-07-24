@@ -1,7 +1,8 @@
 <Page
     class="page"
     navigatingTo="onNavigatingTo"  
-    xmlns="http://schemas.nativescript.org/tns.xsd">
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview">
 
     <ActionBar class="action-bar">
         <!-- 
@@ -22,8 +23,14 @@
         <Label class="action-bar-title" text="Home"></Label>
     </ActionBar>
     <StackLayout orientation="vertical" class="page-content" >
-        <Label class="page__list-item page-icon fa" text="&#xf015;"></Label>
-        <Label class="page__list-item " text="ok"></Label>
+        <lv:RadListView items="{{ dataItems }}" >
+        <lv:RadListView.itemTemplate>
+            <StackLayout orientation="vertical" class="page__list-item " >
+                <Label fontSize="20" text="{{ itemName }}"/>
+                <Label  fontSize="14" text="{{ itemDescription }}"/>
+            </StackLayout>
+        </lv:RadListView.itemTemplate>
+        </lv:RadListView>
     </StackLayout>
 
 </Page>

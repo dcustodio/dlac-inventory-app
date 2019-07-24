@@ -14,3 +14,7 @@ export function onDrawerButtonTap(args: EventData) {
     const sideDrawer = <RadSideDrawer>app.getRootView();
     sideDrawer.showDrawer();
 }
+export function onPageLoaded(args) {
+    const page = args.object;
+    page.bindingContext = new HomeViewModel();
+}
