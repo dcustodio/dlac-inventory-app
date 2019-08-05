@@ -70,7 +70,7 @@ export default function HomeScreen() {
 }
 
 HomeScreen.navigationOptions = {
-  header: null,
+  title: 'Your Inventory'
 };
 
 function DevelopmentModeNotice() {
